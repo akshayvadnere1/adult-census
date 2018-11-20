@@ -23,8 +23,9 @@ mode_occupation = data.occupation.dropna().mode().to_string()
 data.occupation = data.occupation.fillna(mode_occupation)
 
 mode_country = data.native_country.dropna().mode().to_string()
-print(mode_country)
+#print(mode_country)
 data.native_country = data.native_country.fillna(mode_country)
 
-
+for i in range(3):
+    print("akshay")
 #print(data.head(200))
